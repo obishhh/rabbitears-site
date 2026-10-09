@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rabbit's Ears &mdash; Privacy Policy</title>
+<title>Telly! &middot; Privacy Policy</title>
 <style>
   body { background: #F5EAD4; color: #2A2118; font-family: Georgia, 'Times New Roman', serif;
          max-width: 620px; margin: 0 auto; padding: 48px 24px; line-height: 1.55; }
@@ -16,53 +16,90 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="quiet">Rabbit's Ears &middot; Last updated 20 September 2026</p>
+<p class="quiet">Telly! &middot; Last updated 8 October 2026</p>
 
-<h3>What we collect</h3>
-<p>Rabbit's Ears stores what it needs to know where you are in a show, and nothing else:</p>
+<h3>What we keep</h3>
+<p>Telly! keeps what it needs to work, and nothing else:</p>
 <ul>
-  <li><strong>Your account</strong>: a user ID from Sign in with Apple, and the handle
-      you pick. We never see your name, your password or your real email address.
-      If Apple passes on a private relay address, it is held by our authentication
-      provider and is never used to contact you or given to anyone.</li>
-  <li><strong>What you rate</strong>: your ratings, your written reviews, and the
-      position in a season each review was written from.</li>
-  <li><strong>Where you are</strong>: how far through a season you have got, for each
-      show you are watching.</li>
-  <li><strong>Your favourites</strong>: one show per year, if you pick them.</li>
-  <li><strong>Who you watch with</strong>: which simulcasts you are in, and the
-      episode a group has agreed to stop at.</li>
+  <li><strong>Your account</strong>: an ID from Sign in with Apple, and the handle you
+      pick. The app asks Apple for nothing but who you are: no name and no email
+      address, and we hold neither. There is no password. So that Apple can be told
+      when you delete your account, the server may keep a token from Apple for your
+      sign-in. It is used for that and nothing else.</li>
+  <li><strong>Your card</strong>: the line you write about yourself, your colour, and a
+      photo if you add one. The photo is stored small and in greys.</li>
+  <li><strong>What you write</strong>: reviews and the pips on them, rankings of a
+      show's characters, replies, answers to the daily phone-in, calls and your
+      verdicts on other people's, and the applause you give. A review or a reply is
+      kept with the place in the show it was written from.</li>
+  <li><strong>What you rate</strong>: your pips for a show or a season.</li>
+  <li><strong>Where you are</strong>: how far through each show you have got, and the
+      days you took part, which is what your streak counts.</li>
+  <li><strong>Who you know</strong>: who you have added and who has added you, the
+      watch parties you are in or have been asked into, shows friends have put on for
+      you, and anybody you have blocked or reported.</li>
+  <li><strong>Notifications</strong>, if you turn them on: your phone's push token,
+      your time zone, and which kinds you have switched off.</li>
+  <li><strong>Sign-in records</strong>: when your phone signs in, our authentication
+      provider notes its IP address and the version of the app and system asking.</li>
 </ul>
+
+<h3>What stays on your phone</h3>
+<p>The look you picked, the reviews you have tuned in to and the news you have read are
+kept on the phone and never sent. Telly! in Messages reads a copy of your place and
+your recent reviews that the app leaves on the phone; it never signs in. A review you
+send to a chat travels inside the message itself, through Apple's Messages, and we
+never see it.</p>
 
 <h3>What we don't do</h3>
 <ul>
-  <li>No advertising, no trackers, no analytics, no crash reporting. The app contains
-      no third-party SDK that collects anything.</li>
+  <li>No advertising, no trackers, no analytics, no crash reporting of our own. The
+      only outside code in the app is the client for our own database.</li>
   <li>No selling or sharing of your data with anyone.</li>
   <li>No browsable directory of people. Searching for someone returns nothing until
       you have typed at least two characters, so the app can never hand anybody a
       list of everyone who signed up.</li>
+  <li>No words on your lock screen. A notification says who, which show and where,
+      never anything anybody wrote.</li>
 </ul>
+<p>While Telly! is in TestFlight, Apple collects crash reports and any feedback you
+send from TestFlight, and shares them with us under its own terms.</p>
 
 <h3>Who can see what</h3>
-<p>Your handle, your ratings and your reviews are public inside the app. How far you
-have got in a season is not: it is readable by you, and by people in a simulcast with
-you, and by nobody else.</p>
-<p>That rule is enforced by the database itself through row-level security, not by the
-app asking nicely. A bug in the app cannot leak where you are.</p>
+<p>Your handle, your card and what you write are public: anybody using Telly! can read
+them. Your pips for a show or a season show on your reviews of it; the list of
+everything you have rated is yours alone.</p>
+<p>How far you have got is not public. It is readable by you, and by people in a watch
+party with you, for that party's show and no other. A friend, meaning somebody you have
+added who has added you back, can also see the one show you most recently moved on and
+how far into it you are, and the length of your streak. Who you have added is between
+you and them.</p>
+<p>Your photo's file can be fetched by anybody who has its exact address. The app gives
+that address only to people who can already see your handle.</p>
+<p>Blocking somebody hides what each of you writes from the other, and they are not
+told.</p>
+<p>Those rules are enforced by the database itself through row-level security, not by
+the app asking nicely. A bug in the app cannot leak where you are.</p>
 
 <h3>Where it lives</h3>
-<p>Data is stored with Supabase (hosted Postgres). Artwork is loaded from The Movie
-Database's image servers, which means TMDB can see the IP address of a device asking
-for a poster. We send them nothing else, and they are never told who you are.</p>
+<p>Accounts, data and photos are stored with Supabase. Notifications are delivered by
+Apple. Artwork is loaded from The Movie Database's image servers and cast pictures from
+TVmaze's, which means each can see the IP address of a device asking for a picture. We
+send them nothing else, and they are never told who you are.</p>
 
 <h3>Deleting your account</h3>
-<p>Email <a href="mailto:owenbishop364@gmail.com">owenbishop364@gmail.com</a> from any
-address and say the handle you want removed. Your account, your ratings, your reviews,
-your progress and your simulcast membership go with it, permanently.</p>
+<p>In the app: Tune, then Delete account. It asks once. Your account goes with
+everything in it, permanently: your card and photo, what you wrote, your ratings, your
+progress, your friends and your place in any watch party. A party you started passes to
+whoever has been in it longest. A report you made about somebody else is kept, without
+your name on it.</p>
+<p>If you can't get into the app, email
+<a href="mailto:owenbishop364@gmail.com">owenbishop364@gmail.com</a> and say the handle
+you want removed. To take Telly! out of your Apple account as well, look under Sign in
+with Apple in your Apple Account settings.</p>
 
 <h3>Children</h3>
-<p>Rabbit's Ears is not directed at children under 13, and we do not knowingly collect
+<p>Telly! is not directed at children under 13, and we do not knowingly collect
 anything from them.</p>
 
 <h3>Changes</h3>
